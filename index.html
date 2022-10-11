@@ -1,0 +1,236 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontAwesome.css">
+	<title> META-GUI - Towards Multi-modal Conversational Agents on Mobile GUI </title>
+</head>
+<body>
+	<header class="header">
+		<div class="container clearfix">
+			<div class="left-container">
+				<a href="#"> META-GUI </a>
+			</div>
+			<div class="right-container">
+				<ul class="nav-menu clearfix">
+					<li>
+						<a href="#"> Home </a> 
+					<li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="banner">
+		<div class="container clearfix">
+			<h1> META-GUI </h1>
+			<span> Towards Multi-modal Conversational Agents on Mobile GUI </span>
+			<a href="https://meta-gui.s3.us-west-1.amazonaws.com/meta_gui.tar" class="download-hyperlink"><button class="download-button">
+				<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Download 
+				</button>
+			</a>
+		</div>
+	</section>
+	<section class="main-content">
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="info-container">
+						<span class="info-title">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+							What is META-GUI?
+						</span>
+						<p>
+							META-GUI is a dataset for training a <strong>M</strong>ulti-modal conv<strong>E</strong>rsa<strong>T</strong>ional <strong>A</strong>gent on mobile <strong>GUI</strong>. It consists of 1125 dialogues, 4684 dialogue turns and 18337 data points in total. Each data point contains screenshot history, action history, dialogue history, items appeared on the current screen and actions to be performed.
+						</p>
+						<button class="action-button" style="display: none;">
+							Button 1
+						</button>
+						<button class="inverse-button" style="display: none;">
+							Button 2
+						</button>
+						<span class="info-title">
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							News
+						</span>
+						<p class="row">
+                            <span class="news-date col-md-2"> Oct 6, 2022 </span>
+							<span class="news-context"> Our paper is accepted by EMNLP 2022, dataset and baseline are listed below. </span>
+							<span class="news-context"> Dataset is available on </span>
+							<a href="https://meta-gui.s3.us-west-1.amazonaws.com/meta_gui.tar" class="download-link">
+								<i class="fa fa-amazon" aria-hidden="true"></i>
+								Download from Amazon.com
+							</a>
+							<span class="news-context"> Baseline is available on </span>
+							<a href="https://github.com/X-LANCE/META-GUI-baseline" class="download-link">
+								<i class="fa fa-github" aria-hidden="true"></i>
+								META-GUI Baseline
+							</a>
+						</p>
+
+						<span class="info-title">
+							<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+							Contact Us
+						</span>
+						<p>
+							If you have any questions about this dataset, please contact 
+							<a href="mailto:chenlusz@sjtu.edu.cn">chenlusz@sjtu.edu.cn</a> or 
+							<a href="mailto:galaxychen@sjtu.edu.cn">galaxychen@sjtu.edu.cn</a> or
+							<a href="mailto:slt19990817@sjtu.edu.cn">slt19990817@sjtu.edu.cn</a> or
+						</p>
+
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="info-container">
+						<span class="info-title">
+							<i class="fa fa-bar-chart" aria-hidden="true"></i>
+							Leaderboard
+						</span>
+						<p>
+						Three metrics, i.e. Action Completion Rate (CR), Turn Completion Rate, and Reply BLEU score, are used to evaluate on the test set of META-GUI. Please refer to the paper to find more details about evaluation metrics.
+						</p>
+						<table class="leader-board">
+							<tbody>
+								<tr>
+									<th> Rank </th>
+									<th> Model </th>
+									<th> Action CR </th>
+									<th> Turn CR </th>
+									<th> Reply BLEU score </th>
+								</tr>
+								<tr>
+									<td>
+										1
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										m-BASH
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 82.74 </td>
+									<td class="stat"> 56.88 </td>
+									<td class="stat"> 63.11 </td>
+								</tr>
+								<tr>
+									<td>
+										2
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										BERT
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 78.42 </td>
+									<td class="stat"> 52.08 </td>
+									<td class="stat"> 62.19 </td>
+								</tr>
+								<tr>
+									<td>
+										3
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										LayoutLM
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 67.76 </td>
+									<td class="stat"> 38.12 </td>
+									<td class="stat"> 50.43 </td>
+								</tr>
+								<tr>
+									<td>
+										4
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										LayoutLMv2
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 64.48 </td>
+									<td class="stat"> 36.88 </td>
+									<td class="stat"> 58.20 </td>
+								</tr>
+								<tr>
+									<td>
+										5
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										FM
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 10.00 </td>
+									<td class="stat"> 6.76 </td>
+									<td class="stat"> 7.88 </td>
+								</tr>
+								<tr>
+									<td>
+										6
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										MFM
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 8.91 </td>
+									<td class="stat"> 0.00 </td>
+									<td class="stat"> 9.29 </td>
+								</tr>
+								<tr>
+									<td>
+										7
+										<span>
+											Oct 06, 2022
+										</span>
+									</td>
+									<td>
+										Random
+										<p> Shanghai Jiao Tong University </p>
+										<a class='link' href='https://arxiv.org/abs/2205.11029v1'> (Sun et al., EMNLP'22) </a>
+										<a class='link' href='https://github.com/X-LANCE/META-GUI-baseline'> code </a>
+									</td>
+									<td class="stat"> 5.71 </td>
+									<td class="stat"> 3.99 </td>
+									<td class="stat"> 0.71 </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer clearfix">
+		<a href="http://x-lance.sjtu.edu.cn/"> SJTU X-LANCE Lab<a>
+	</section>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/footer.js"></script>
+</body>
+</html>
